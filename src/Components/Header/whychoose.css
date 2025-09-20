@@ -1,0 +1,92 @@
+.why-choose {
+  padding: 56px 16px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.wc-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.wc-header h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #111827;
+}
+.dark .wc-header h2 { color: #fff; }
+.wc-highlight { color: #eab308; }
+.wc-header p { color: #4b5563; }
+.dark .wc-header p { color: #cbd5e1; }
+
+/* --- Slider --- */
+.wc-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+/* --- Card --- */
+.wc-card {
+  position: absolute;
+  width: 280px;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0,0,0,.15);
+  transition: transform .6s ease, opacity .6s ease, z-index .3s;
+}
+
+/* --- Image --- */
+.wc-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.9);
+}
+.wc-content {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.7));
+  color: #fff;
+}
+.wc-content h3 { margin: 0 0 4px; font-size: 1.25rem; font-weight: 800; }
+.wc-content p { margin: 0; font-size: 1rem; opacity: .95; }
+
+/* --- Controls --- */
+.wc-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.wc-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.wc-btn:hover { transform: translateY(-2px); }
+.dark .wc-btn { background: #f59e0b; color: #111827; }
+
+@media (max-width: 768px) {
+  .wc-card { width: 220px; height: 260px; }
+}
+.dark .wc-card { width: 280px; height: 320px; }
+.dark .wc-btn:hover { background: #fbbf24; }
+.dark .wc-btn:active { background: #f59e0b; }
+.dark .wc-card { width: 280px; height: 320px; }
+.dark .wc-content { background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.7)); color: #111827; }
+.dark .wc-content h3, .dark .wc-content p { color: #111827; }
+.dark .wc-card { box-shadow: 0 12px 24px rgba(255,255,255,.15); }
+.dark .wc-card .wc-image { filter: brightness(1.1); }
+.dark .wc-card .wc-image:hover { filter: brightness(1.2); }
+.dark .wc-card .wc-image:hover { filter: brightness(1.2); }

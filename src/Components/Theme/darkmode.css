@@ -1,0 +1,17 @@
+.dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dark .dark-mode-toggle {
+    border: 2px solid #f59e0b;
+    box-shadow: 0 0 6px #f59e0b;
+  }
+  

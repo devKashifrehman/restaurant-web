@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🍽️ AL REHMAN RESTAURANT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AL REHMAN RESTAURANT is a modern web application where users can explore a wide range of food items, place online orders, and even reserve a table at their preferred time. The app provides a smooth and interactive experience using ReactJS with local storage for order/cart management.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🥘 **Wide Variety of Food** – Browse and explore different categories of dishes.  
+- 🛒 **Cart & Order System** – Add food items to cart and confirm orders.  
+- 🎥 **Order Animation** – Unique animation plays when a client places an order.  
+- 📅 **Table Reservation** – Clients can book their table anytime as per their convenience.  
+- 💾 **Local Storage** – Orders and cart data persist even after page reloads.  
+- 🎨 **Modern UI** – Responsive design with custom CSS for a luxury feel.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technology Stack
 
-### `npm test`
+- **Frontend:** ReactJS  
+- **Styling:** CSS  
+- **State Management:** React Hooks (`useState`, `useEffect`)  
+- **Storage:** Local Storage (for cart & orders)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/devKashifrehman/-AL-REHMAN-RESTAURANT-Online-Food-Ordering-Table-Reservation.git
+cd AL-REHMAN-RESTAURANT-Online-Food-Ordering-Table-Reservation
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3️⃣ Run the Project
+```bash
+npm start
+```
+App will run at 👉 [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+ ├── assets/             # images & videos (animations, food images, etc.)
+ ├── components/         # reusable React components
+ │    ├── Navbar.jsx
+ │    ├── Menu.jsx
+ │    ├── Order.jsx
+ │    └── Animation.jsx
+ ├── pages/              # different pages (Home, About, Reservation, etc.)
+ ├── App.js              # main entry point
+ ├── index.js
+ └── styles/             # CSS files
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🖼️ Screenshots / Demo
 
-## Learn More
+### 🔹 Home Page  
+![Home Page](./Screenshot%201.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔹 Menu Page  
+![Menu Page](./Screenshot%202.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎞️ Order Animation
 
-### Analyzing the Bundle Size
+* When a client clicks **Order Now**, a **9-second custom animation/video** plays inside the button.  
+* After completion, it shows a ✅ success message with **“Thanks for placing your order”**.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📌 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Backend integration with **Node.js/Express + MongoDB**.  
+* Payment gateway integration for online payments.  
+* Admin dashboard for managing orders and reservations.  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🌍 Live Demo
 
-### Deployment
+👉 [Visit Website](https://your-live-demo-link.vercel.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Kashif Rehman** – *Frontend Web Developer*  
+
+* 💻 GitHub: [https://github.com/devKashifrehman](https://github.com/devKashifrehman)  
+* 🔗 LinkedIn: [https://www.linkedin.com/in/kashif-rehman-04620a26b/](#)  
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+
+Copyright (c) 2025 Kashif Rehman

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@600;700&display=swap');
+
+.text-carousel {
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Title styling */
+.text-carousel h1 {
+  font-family: 'Italianno', cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+  transition: opacity 0.6s ease;
+}
+
+/* Description styling */
+.text-carousel p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-top: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Highlighted span */
+.highlight {
+  color: #facc15;
+  font-weight: 700;
+}
+
+/* Fade animations */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
