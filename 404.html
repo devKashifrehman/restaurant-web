@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+
+    <script type="text/javascript">
+      (function () {
+        var path = window.location.pathname;
+        var base = "/restaurant-web/";
+
+        if (path === base || path === base.slice(0, -1)) return;
+
+        sessionStorage.setItem("redirect", path);
+        window.location.replace(base + "#!" + path.replace(base, ""));
+      })();
+    </script>
+  </head>
+
+  <body>
+    Redirecting...
+  </body>
+</html>
