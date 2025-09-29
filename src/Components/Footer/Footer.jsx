@@ -111,7 +111,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="footer-copyright">
         <p>
-           &copy; 2025 All rights reserved || Made with ❤️ by <span>Kashif Rehman</span>
+           © {new Date().getFullYear()} All rights reserved || Created by <span>Kashif Rehman</span>
         </p>
       </div>
     </footer>
