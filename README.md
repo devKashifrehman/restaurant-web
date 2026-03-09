@@ -108,7 +108,7 @@ src/
 
 This project is licensed under the MIT License.  
 
-© Copyright & Usage
+© Copyright & Usage:
 
 © 2026 Kashif Rehman. All Rights Reserved.
 
