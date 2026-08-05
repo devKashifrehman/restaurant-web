@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import DarkMode from '../Theme/Dark';
 import HamburgerButton from './HamburgerButton';
@@ -16,7 +16,7 @@ const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // ✅ Dark mode state sync
+  // Dark mode state sync
   useEffect(() => {
     const checkDarkMode = () => {
       const isDarkMode = document.documentElement.classList.contains('dark');
@@ -32,14 +32,14 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  // ✅ Toggle mobile menu
+  // Toggle mobile menu
   const toggleMobileMenu = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // ✅ Close mobile menu
+  // Close mobile menu
   const closeMobileMenu = (e) => {
     if (e) {
       e.preventDefault();
@@ -48,7 +48,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  // ✅ Outside click + Escape key close
+  // Outside click + Escape close
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -82,54 +82,61 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <div className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-content">
-          {/* ✅ Brand */}
-          <div className="navbar-brand">AL Rehman Restaurant</div>
+    <>
+      <div className="navbar">
+        <div className="navbar-container">
+          <div className="navbar-content">
+            {/* Brand */}
+            <div className="navbar-brand">AL Rehman Restaurant</div>
 
-          {/* ✅ Actions */}
-          <div className="navbar-actions">
-            {/* Dark Mode Toggle */}
-            <DarkMode />
+            {/* Actions */}
+            <div className="navbar-actions">
+              {/* Dark Mode Toggle */}
+              <DarkMode />
 
-            {/* Desktop Nav */}
-            <ul className="navbar-nav">
-              {menuItems.map((item, index) => (
-                <li key={index}>
-                  <NavLink
-                    to={item.href}
-                    className={({ isActive }) => (isActive ? 'active' : '')}
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
+              {/* Desktop Nav */}
+              <ul className="navbar-nav">
+                {menuItems.map((item, index) => (
+                  <li key={index}>
+                    <NavLink
+                      to={item.href}
+                      className={({ isActive }) => (isActive ? 'active' : '')}
+                    >
+                      {item.label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
 
-            {/* ✅ Order Button */}
-            <Link to="/menu" className="navbar-order-btn navbar-order-btn-desktop">
-              Order
-              <FaShoppingCart className="navbar-cart-icon" />
-            </Link>
+              {/* Order Button */}
+              <button className="navbar-order-btn navbar-order-btn-desktop">
+                Order
+                <FaShoppingCart className="navbar-cart-icon" />
+              </button>
 
-            {/* ✅ Hamburger */}
-            <HamburgerButton
-              isOpen={isMobileMenuOpen}
-              onClick={toggleMobileMenu}
-              isDark={isDark}
-            />
+              {/* Hamburger */}
+              <HamburgerButton
+                isOpen={isMobileMenuOpen}
+                onClick={toggleMobileMenu}
+                isDark={isDark}
+              />
+            </div>
           </div>
-        </div>
 
-        {/* ✅ Mobile Menu */}
-        <MobileMenu
-          isOpen={isMobileMenuOpen}
-          onClose={closeMobileMenu}
-          menuItems={menuItems}
-        />
+          {/* Mobile Menu */}
+          <MobileMenu
+            isOpen={isMobileMenuOpen}
+            onClose={closeMobileMenu}
+            menuItems={menuItems}
+          />
+        </div>
       </div>
-    </div>
+
+      {/* Backdrop */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-backdrop" onClick={closeMobileMenu}></div>
+      )}
+    </>
   );
 };
 

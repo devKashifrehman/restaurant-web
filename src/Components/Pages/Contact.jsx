@@ -114,10 +114,19 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="map" data-aos="fade-up">
+<div className="map" data-aos="fade-up">
           <h2>Find Us</h2>
-          <div className="map-placeholder">
-            <p>Interactive map would be embedded here</p>
+          <div className="map-container">
+            <iframe
+              title="AL Rehman Restaurant Location"
+              src="https://www.google.com/maps?q=123+Main+Street,+Karachi,+Pakistan&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
